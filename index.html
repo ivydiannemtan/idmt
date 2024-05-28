@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IDMT - Professional Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -17,7 +18,7 @@
             background-color: #333;
             color: #fff;
             text-align: center;
-            padding: 1rem 0;
+            padding: 1.5rem 0;
         }
         header h1, footer p {
             margin: 0;
@@ -25,17 +26,17 @@
         nav {
             display: flex;
             justify-content: center;
-            padding: 1rem 0;
             background-color: #444;
         }
         nav a {
             color: #fff;
             text-decoration: none;
             margin: 0 1rem;
+            padding: 1rem;
             font-weight: bold;
         }
         nav a:hover {
-            text-decoration: underline;
+            background-color: #555;
         }
         .container {
             width: 90%;
@@ -53,6 +54,9 @@
             color: #444;
             border-bottom: 2px solid #444;
             padding-bottom: 0.5rem;
+        }
+        .section p, .section ul {
+            margin: 1rem 0;
         }
         .button {
             display: inline-block;
@@ -77,6 +81,23 @@
             padding: 0.5rem;
             border: 1px solid #ccc;
             border-radius: 4px;
+        }
+        .testimonial {
+            background-color: #f9f9f9;
+            padding: 1rem;
+            border-left: 5px solid #333;
+            margin: 1rem 0;
+            border-radius: 5px;
+        }
+        .testimonial p {
+            margin: 0;
+            font-style: italic;
+        }
+        .testimonial cite {
+            display: block;
+            margin-top: 0.5rem;
+            font-weight: bold;
+            text-align: right;
         }
     </style>
 </head>
@@ -120,8 +141,14 @@
         </section>
         <section id="testimonials" class="section">
             <h2>Testimonials</h2>
-            <p>“IDMT has been an invaluable asset to our team. Their expertise in multiple areas has helped us achieve our business goals efficiently and effectively.” - Client A</p>
-            <p>“Highly professional and detail-oriented. IDMT delivers exceptional results every time.” - Client B</p>
+            <div class="testimonial">
+                <p>“IDMT has been an invaluable asset to our team. Their expertise in multiple areas has helped us achieve our business goals efficiently and effectively.”</p>
+                <cite>- Client A</cite>
+            </div>
+            <div class="testimonial">
+                <p>“Highly professional and detail-oriented. IDMT delivers exceptional results every time.”</p>
+                <cite>- Client B</cite>
+            </div>
         </section>
         <section id="blog" class="section">
             <h2>Blog</h2>
