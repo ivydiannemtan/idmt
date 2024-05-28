@@ -8,7 +8,7 @@
     <style>
         body {
             font-family: 'Roboto', sans-serif;
-            background-color: #f0f0f0;
+            background-color: #f9f9f9;
             color: #333;
             margin: 0;
             padding: 0;
@@ -22,11 +22,13 @@
         }
         header h1, footer p {
             margin: 0;
+            font-size: 2rem;
         }
         nav {
             display: flex;
             justify-content: center;
             background-color: #444;
+            padding: 1rem 0;
         }
         nav a {
             color: #fff;
@@ -34,6 +36,7 @@
             margin: 0 1rem;
             padding: 1rem;
             font-weight: bold;
+            transition: background-color 0.3s ease;
         }
         nav a:hover {
             background-color: #555;
@@ -49,14 +52,18 @@
         }
         .section {
             margin-bottom: 2rem;
+            padding: 2rem;
         }
         .section h2 {
-            color: #444;
-            border-bottom: 2px solid #444;
+            color: #333;
+            border-bottom: 2px solid #333;
             padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
         }
         .section p, .section ul {
             margin: 1rem 0;
+            font-size: 1.1rem;
         }
         .button {
             display: inline-block;
@@ -68,6 +75,7 @@
             border-radius: 5px;
             text-decoration: none;
             cursor: pointer;
+            transition: background-color 0.3s ease;
         }
         .button:hover {
             background-color: #555;
@@ -76,11 +84,15 @@
             display: grid;
             grid-gap: 1rem;
         }
+        form label {
+            font-size: 1.1rem;
+        }
         form input, form textarea {
             width: 100%;
             padding: 0.5rem;
             border: 1px solid #ccc;
             border-radius: 4px;
+            font-size: 1rem;
         }
         .testimonial {
             background-color: #f9f9f9;
@@ -155,24 +167,4 @@
             <p>Coming soon...</p>
         </section>
         <section id="contact" class="section">
-            <h2>Contact</h2>
-            <p>Let's connect and explore how I can contribute to your success! Feel free to reach out to me through the form below.</p>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-                
-                <button type="submit" class="button">Send Message</button>
-            </form>
-        </section>
-    </div>
-    <footer>
-        <p>&copy; 2024 IDMT. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+            <h2>Contact</h2
